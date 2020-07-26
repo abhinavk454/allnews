@@ -7,9 +7,19 @@ import Sport from '../pages/Sports';
 
 function Nav() {
     return (
-        <div>
-            
-        </div>
+        <Router>
+            <Link to="/home">To Home</Link>
+            <Link to="/sports">To Sports</Link>
+            <Link to="/entertainment">To Entertainment</Link>
+            <Link to='/politics'>To Politics</Link>
+            <Switch>
+                <Route exact path='/' component={Home}/>
+                <Route path='/home' component={Home}/>
+                <Route path='/sports' component={Sport}/>
+                <Route path='/entertainment' component={Entertainment}/>
+                <Route path='/politics' component={Politics}/>
+            </Switch>
+        </Router>
     )
 }
 
