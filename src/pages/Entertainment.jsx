@@ -21,13 +21,13 @@ function Entertainment() {
                     <article id="art">
                       <img id="img" src={re.urlToImage} alt="" />
                       <br />
-                      <span id="sp1">Title : {re.title}</span>
+                      <span id="sp1">{re.title}</span>
                       <br />
                       Author : {re.author}
                       <br />
                       Content : {re.content}
                       <br />
-                      <a href={re.url} target="_blank">
+                      <a href={re.url} target="_blank" rel="noopener noreferrer"> 
                         For more
                       </a>
                       <br />

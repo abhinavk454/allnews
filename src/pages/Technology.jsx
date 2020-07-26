@@ -2,11 +2,11 @@ import React,{useState,useEffect} from 'react'
 import axios from 'axios'
 import '../styles/Pages.css'
 
-function Sports() {
+function Technology() {
     const [news,setNews]=useState([]);
     useEffect(()=>{
         axios
-        .get(`https://newsapi.org/v2/everything?q=Sports&apiKey=498ea298d85448b0b4efb9d95ffb002f`)
+        .get(`https://newsapi.org/v2/everything?q=Technology&apiKey=498ea298d85448b0b4efb9d95ffb002f`)
         .then((res)=>{
             setNews(res.data.articles)
         })
@@ -42,4 +42,4 @@ function Sports() {
     )
 }
 
-export default Sports
+export default Technology
