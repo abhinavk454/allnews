@@ -15,7 +15,7 @@ function Search() {
                 />
             </form>
             <div>
-                <HandleSearch />
+                <HandleSearch query={ques}/>
             </div>
         </div>
     )

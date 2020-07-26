@@ -5,6 +5,9 @@ function App() {
   return (
     <div>
       <Nav />
+      <footer>
+        End 
+      </footer>
     </div>
   );
 }
